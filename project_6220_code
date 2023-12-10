@@ -1,1 +1,28 @@
+Import Python Modules
+import numpy as np
+import pandas as pd
+
+import matplotlib.pyplot as plt
+# use seaborn plotting style defaults
+import seaborn as sns
+sns.set_theme(style="darkgrid")
+plt.rcParams['figure.figsize'] = (12,8)
+
+from sklearn.decomposition import PCA
+from sklearn.preprocessing import StandardScaler
+
+from sklearn.model_selection import train_test_split, cross_validate, GridSearchCV
+from sklearn.preprocessing import label_binarize
+from sklearn.multiclass import OneVsRestClassifier
+from sklearn.metrics import confusion_matrix, classification_report, roc_curve, auc
+
+from scipy.stats import beta
+from scipy.stats import f
+
+from itertools import cycle
+
+# Machine Learning Modules
+from sklearn.naive_bayes import GaussianNB
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.tree import DecisionTreeClassifier
 
